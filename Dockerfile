@@ -9,5 +9,7 @@ RUN \
   cd .. && \
   bazel build -c opt tensorflow_serving/...
 
+COPY fixes/ /serving/bazel-bin/tensorflow_serving/example/inception_export.runfiles/inception_model/inception/
+
 ENTRYPOINT ["/serving/bazel-bin/tensorflow_serving/model_servers/tensorflow_model_server"]
 CMD ["--port=9000","--model_name=inception","--model_base_path=/opt/tf-export","--use-saved-model=false"]

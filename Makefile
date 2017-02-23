@@ -2,7 +2,7 @@ ROOTDIR := $(shell pwd)
 
 .PHONY: default
 
-default: .tfsd
+default:
 	docker build -t tensorflow-serving .
 
 .tfsd: Dockerfile.devel

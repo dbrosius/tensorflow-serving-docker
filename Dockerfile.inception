@@ -1,4 +1,4 @@
-FROM dbrosius/tensorflow-serving:20170128
+FROM tensorflow-serving
 MAINTAINER Dan
 
 COPY inception-export /opt/tf-export

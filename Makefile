@@ -10,4 +10,4 @@ default: .tfsd
 	touch .tfsd
 
 Dockerfile.devel:
-	curl -O https://raw.githubusercontent.com/tensorflow/serving/master/tensorflow_serving/tools/docker/Dockerfile.devel
+	curl -O https://raw.githubusercontent.com/tensorflow/serving/0.5.1/tensorflow_serving/tools/docker/Dockerfile.devel
